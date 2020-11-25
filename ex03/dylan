@@ -1,0 +1,4 @@
+find . -print 		encontra todos os ficheiros e mostra  o
+wc -l 				mostra numa lista
+tr -d ' ' 			remove o espaco
+
