@@ -1,0 +1,10 @@
+echo "$FT_NBR1 + $FT_NBR2" | \			
+sed "s/\'/0/g" | \				os primeiros 5 seis são para substituir	 ’\"?! Com 01234
+sed 's/\\/1/g' | \
+sed "s/\"/2/g" | \
+sed 's/?/3/g' | \
+sed 's/!/4/g' | \
+tr "mrdoc" "01234" | \				traduzir mrdoc para 01234
+xargs echo "obase=13; ibase=5;" | \		dizer que o impute tem base 5 e o output 13
+bc | \						calculadora
+tr "0123456789ABC" "gtaio luSnemf"		traduzir x para gato lusnemf

@@ -1,0 +1,4 @@
+ifconfig -a | grep ether | cut -d " " -f2
+Ipconfig -a mostra tudo
+grep ether mostra apenas  o que tem ether ( fica ether ip )
+cut -d " " -f2 corta tudo a esquerda de um espaco, ou seja fica apenas o ip

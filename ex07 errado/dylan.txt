@@ -1,0 +1,21 @@
+
+
+cat /etc/passwd | sed '/#/d' | awk 'NR % 2 == 0 {print $0}' | awk -F ":" '{ print $1}' | rev | sort -fnr | awk -v ln1=$FT_LINE1 -v ln2=$FT_LINE2 'NR >=ln1 && NR <=ln2' | awk '{printf $0", "}' | sed 's/.\{2\}$/./'
+
+
+Cat/etc/passwd 				mostra tudo
+sed '/#/d' 				tira tudo de # (início)
+awk 'NR % 2 == 0 {print $0}' 		"every other line starting from the second line"
+awk -F ":" '{ print $1}' 		tire tudo a direita de ":" ficando so os logins
+Rev 					reverse uno card ;) 		(reversing each lo- gin,
+Sort -fur				ordem alfabetica 		( sorted in reverse alphabetical order,)
+awk '{printf $0", "}' 			mete virgula e espace em todos os ENTERS
+sed 's/.\{2\}$/./' 			tira a ultima virgula e espace e substitui por um ponto
+Awk 2o mete , e espaco em todas e o sed tira o ultimo virgula e espace e mete apenas um ponto
+
+
+
+
+
+
+ExportFT_LINE1=4 e msm p 2

@@ -1,0 +1,3 @@
+tudo exceto ex05 e ex07 estao aceites pela marionete, em principio 05 estara bem, 07 nao sei pq esta errado
+ficheiros c dylan sao a minha explicacao
+
